@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0d0d0d"/>
+  <!-- Pannello solare stilizzato -->
+  <rect x="10" y="22" width="44" height="28" rx="3" fill="none" stroke="#cc1f1f" stroke-width="2.5"/>
+  <line x1="10" y1="36" x2="54" y2="36" stroke="#cc1f1f" stroke-width="1.5" opacity=".7"/>
+  <line x1="25" y1="22" x2="25" y2="50" stroke="#cc1f1f" stroke-width="1.5" opacity=".7"/>
+  <line x1="39" y1="22" x2="39" y2="50" stroke="#cc1f1f" stroke-width="1.5" opacity=".7"/>
+  <!-- Sole -->
+  <circle cx="32" cy="14" r="5" fill="#cc1f1f"/>
+  <line x1="32" y1="6" x2="32" y2="4" stroke="#cc1f1f" stroke-width="2" stroke-linecap="round"/>
+  <line x1="38" y1="8" x2="39.5" y2="6.5" stroke="#cc1f1f" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="26" y1="8" x2="24.5" y2="6.5" stroke="#cc1f1f" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

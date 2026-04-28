@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Energy Service Tech — Energie Rinnovabili & Soluzioni Tecnologiche</title>
+<meta name="description" content="Energy Service Tech: installazione impianti fotovoltaici, energie rinnovabili, telecomunicazioni e impiantistica. Soluzioni tecnologiche integrate per un futuro sostenibile."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+<link rel="icon" href="favicon.ico" sizes="any"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo" style="display:flex;align-items:center;gap:.75rem;">
+    <img src="logo.png" alt="Energy Service Tech Logo" height="62" style="display:block;"/>
+    <span style="font-size:.72rem;font-weight:600;letter-spacing:.1em;color:var(--text-2);text-transform:uppercase;line-height:1.35;">Energy Service<br>Tech</span>
+  </a>
+  <div class="nav-toggle" id="navToggle" aria-label="Menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+    <li><a href="rinnovabili.html">Energie Rinnovabili</a></li>
+    <li><a href="servizi.html">Servizi</a></li>
+    <li><a href="contatti.html" class="nav-cta">Contattaci</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" style="min-height:100vh;">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80&auto=format&fit=crop');"></div>
+  <div class="hero-content" style="max-width:1200px;margin:0 auto;width:100%;">
+    <div class="hero-eyebrow">Energie Rinnovabili · Telecomunicazioni · Impiantistica</div>
+    <h1>Il futuro è rinnovabile.<br><span class="highlight">Noi lo costruiamo oggi.</span></h1>
+    <p class="hero-sub">Energy Service Tech progetta, installa e mantiene impianti fotovoltaici, reti TLC e infrastrutture tecnologiche su scala nazionale, con un focus sull'efficienza e la sostenibilità.</p>
+    <div class="hero-ctas">
+      <a href="rinnovabili.html" class="btn btn-primary btn-lg">Scopri il Fotovoltaico</a>
+      <a href="contatti.html" class="btn btn-outline btn-lg">Richiedi Preventivo →</a>
+    </div>
+  </div>
+  <div class="hero-badge">
+    <div>
+      <div class="badge-num">10+</div>
+      <div class="badge-label">Anni di esperienza<br>nel settore</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STATS ═══════════ -->
+<section style="padding:0;background:var(--bg-1);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="section-inner" style="padding:0;">
+    <div class="stats-grid">
+      <div class="stat-item fade-in">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Anni di esperienza</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num">200+</div>
+        <div class="stat-label">Impianti installati</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">Clienti serviti</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Copertura nazionale</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SERVIZI ═══════════ -->
+<section>
+  <div class="section-inner">
+    <div class="section-tag">I nostri servizi</div>
+    <h2 class="section-title">Soluzioni complete per <span class="highlight">ogni esigenza</span></h2>
+    <p class="section-subtitle">Dalla produzione di energia pulita alle reti in fibra ottica, offriamo un ecosistema integrato di servizi tecnologici.</p>
+
+    <div class="services-grid">
+      <!-- FEATURED -->
+      <a href="rinnovabili.html" class="service-card featured fade-in">
+        <span class="service-badge-featured">⭐ Servizio Core</span>
+        <div class="service-icon">☀️</div>
+        <h3>Energie Rinnovabili</h3>
+        <p>Progettiamo e installiamo impianti fotovoltaici su misura, con manutenzione continuativa e ricerca guasti. Partner certificati ATON e Zucchetti Azzurro.</p>
+        <span class="service-link">Scopri di più →</span>
+      </a>
+
+      <a href="servizi.html#fibre" class="service-card fade-in">
+        <div class="service-icon">🔆</div>
+        <h3>Fibre Ottiche</h3>
+        <p>Giunzione, terminazione e delivery su reti FTTH/FTTC strutturate. Partner Open Fiber, Fastweb, Fibernet.</p>
+        <span class="service-link">Scopri di più →</span>
+      </a>
+
+      <a href="servizi.html#tlc-mobile" class="service-card fade-in">
+        <div class="service-icon">📡</div>
+        <h3>TLC — Rete Mobile</h3>
+        <p>Infrastrutture 5G, installazione apparati radio, coperture dedicate (gallerie, campus, DAS) e reti private.</p>
+        <span class="service-link">Scopri di più →</span>
+      </a>
+
+      <a href="servizi.html#tlc-fissa" class="service-card fade-in">
+        <div class="service-icon">🌐</div>
+        <h3>TLC — Rete Fissa</h3>
+        <p>Realizzazione e manutenzione di reti in rame e fibra ottica, con competenze su Ericsson, ZTE, Huawei, Nokia.</p>
+        <span class="service-link">Scopri di più →</span>
+      </a>
+
+      <a href="servizi.html#impiantistica" class="service-card fade-in">
+        <div class="service-icon">⚡</div>
+        <h3>Impiantistica & Automazione</h3>
+        <p>Impianti elettrici civili e industriali, cablaggio quadri, supervisione e telecontrollo con team certificato.</p>
+        <span class="service-link">Scopri di più →</span>
+      </a>
+
+      <a href="servizi.html#dpi" class="service-card fade-in">
+        <div class="service-icon">🛡️</div>
+        <h3>Ispezione DPI</h3>
+        <p>Revisione e ispezione dei Dispositivi di Protezione Individuale di terza categoria nel rispetto del D.Lgs 81/08.</p>
+        <span class="service-link">Scopri di più →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOTOVOLTAICO FOCUS ═══════════ -->
+<section style="background:var(--bg-1);padding:90px 5%;">
+  <div class="feature-row" style="max-width:1200px;margin:0 auto;">
+    <div class="feature-img fade-in">
+      <img src="pannelli solari 2.jpg" alt="Energie Rinnovabili - Energy Service Tech" loading="lazy"/>
+    </div>
+    <div class="feature-text fade-in">
+      <div class="section-tag">Fotovoltaico</div>
+      <h2>Energie Rinnovabili: <span class="highlight">il cuore della nostra missione</span></h2>
+      <div class="divider"></div>
+      <p>Energy Service Tech è fortemente impegnata nella transizione energetica. Installiamo, collaudiamo e manuteniamo impianti fotovoltaici su tutto il territorio nazionale, offrendo ai nostri clienti soluzioni ecologiche e all'avanguardia.</p>
+      <p>Lavoriamo con operatori di rilievo come <strong>Sorgenia</strong> e utilizziamo tecnologie leader di mercato come <strong>ATON</strong> e <strong>Zucchetti Azzurro</strong>.</p>
+      <div class="comp-list mt-2">
+        <div class="comp-item">Installazione impianti fotovoltaici residenziali e industriali</div>
+        <div class="comp-item">Ricerca guasti e diagnostica avanzata</div>
+        <div class="comp-item">Manutenzione ordinaria e straordinaria</div>
+        <div class="comp-item">Monitoraggio da remoto della produzione</div>
+      </div>
+      <div class="mt-4">
+        <a href="rinnovabili.html" class="btn btn-primary">Approfondisci →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PERCHÉ SCEGLIERCI ═══════════ -->
+<section>
+  <div class="section-inner">
+    <div class="text-center">
+      <div class="section-tag">Perché Energy Service Tech</div>
+      <h2 class="section-title">Esperienza, <span class="highlight">innovazione</span> e passione</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="why-grid mt-4">
+      <div class="why-card fade-in">
+        <div class="why-icon">🏆</div>
+        <h3>Esperienza consolidata</h3>
+        <p>Un team con anni di background nel settore delle telecomunicazioni e dell'energia rinnovabile, capace di gestire progetti complessi con i più alti standard di qualità.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon">🔬</div>
+        <h3>Innovazione tecnologica</h3>
+        <p>Adottiamo le tecnologie più avanzate — dal 5G all'energy storage — per offrire soluzioni all'avanguardia e orientate al futuro del mercato.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon">🛡️</div>
+        <h3>Sicurezza & Qualità</h3>
+        <p>Lavoriamo nel pieno rispetto delle normative vigenti, con personale qualificato e certificato, garantendo il massimo standard di sicurezza su ogni cantiere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CTA BAND ═══════════ -->
+<div class="cta-band">
+  <div class="section-tag" style="justify-content:center;">Passa al rinnovabile</div>
+  <h2>Pronto a <span class="highlight">ridurre i costi energetici?</span></h2>
+  <p>Un impianto fotovoltaico può ridurre la tua bolletta elettrica fino al 70%. Contattaci per un preventivo gratuito e senza impegno.</p>
+  <div class="btn-group">
+    <a href="contatti.html" class="btn btn-primary btn-lg">Richiedi Preventivo Gratuito</a>
+    <a href="rinnovabili.html" class="btn btn-outline btn-lg">Scopri i vantaggi</a>
+  </div>
+</div>
+
+<!-- ═══════════ CLIENTI ═══════════ -->
+<style>
+.client-logo-link {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:48px;
+  filter: brightness(0) invert(0.6);
+  opacity:.65;
+  transition:filter .35s ease, opacity .35s ease;
+  text-decoration:none;
+}
+.client-logo-link:hover {
+  filter:none;
+  opacity:1;
+}
+.client-logo-img {
+  max-height:38px;
+  max-width:130px;
+  width:auto;
+  object-fit:contain;
+  display:block;
+}
+.client-logo-text {
+  font-size:.8rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  color:var(--text-2);
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+</style>
+<section>
+  <div class="section-inner">
+    <div class="text-center">
+      <div class="section-tag">I nostri clienti</div>
+      <h2 class="section-title">Si fidano di noi</h2>
+      <div class="divider"></div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2rem 3.5rem;margin-top:2.5rem;">
+
+      <a href="https://www.sorgenia.it" target="_blank" rel="noopener" class="client-logo-link" title="Sorgenia">
+        <img src="https://www.sorgenia.it/sites/default/themes/sorgenia/assets/images/logo.svg" alt="Sorgenia" class="client-logo-img"
+          onerror="this.outerHTML='<span class=\'client-logo-text\'>Sorgenia</span>'"/>
+      </a>
+
+      <a href="https://openfiber.it" target="_blank" rel="noopener" class="client-logo-link" title="Open Fiber">
+        <img src="https://logo.clearbit.com/openfiber.it" alt="Open Fiber" class="client-logo-img"
+          onerror="this.outerHTML='<span class=\'client-logo-text\'>Open Fiber</span>'"/>
+      </a>
+
+      <a href="https://www.fastweb.it" target="_blank" rel="noopener" class="client-logo-link" title="Fastweb">
+        <img src="https://www.fastweb.it/adsl-fibra-ottica/gfx/dual/logo_black.svg" alt="Fastweb" class="client-logo-img"
+          onerror="this.outerHTML='<span class=\'client-logo-text\'>Fastweb</span>'"/>
+      </a>
+
+      <a href="https://www.fibernet.it" target="_blank" rel="noopener" class="client-logo-link" title="Fibernet">
+        <img src="https://logo.clearbit.com/fibernet.it" alt="Fibernet" class="client-logo-img"
+          onerror="this.outerHTML='<span class=\'client-logo-text\'>Fibernet</span>'"/>
+      </a>
+
+      <a href="https://www.circet.it" target="_blank" rel="noopener" class="client-logo-link" title="Circet Italia">
+        <img src="https://www.circet.it/medias/_processed_/6/b/csm_logo_Italia_40562115ab.png" alt="Circet Italia" class="client-logo-img"
+          onerror="this.outerHTML='<span class=\'client-logo-text\'>Circet Italia</span>'"/>
+      </a>
+
+      <a href="https://selekta.it" target="_blank" rel="noopener" class="client-logo-link" title="Selekta Italia">
+        <img src="https://logo.clearbit.com/selekta.it" alt="Selekta Italia" class="client-logo-img"
+          onerror="this.outerHTML='<span class=\'client-logo-text\'>Selekta Italia</span>'"/>
+      </a>
+
+      <a href="#" class="client-logo-link" title="MG Project">
+        <span class="client-logo-text">MG Project</span>
+      </a>
+
+      <a href="https://www.eolo.it" target="_blank" rel="noopener" class="client-logo-link" title="EOLO">
+        <img src="https://www.eolo.it/web/imperex/image/4edd84de_logo-eolo.webp" alt="EOLO" class="client-logo-img"
+          onerror="this.outerHTML='<span class=\'client-logo-text\'>EOLO</span>'"/>
+      </a>
+
+      <a href="https://www.sitespa.it" target="_blank" rel="noopener" class="client-logo-link" title="SITE">
+        <img src="https://www.sitespa.it/wp-content/uploads/2019/04/logo-ita.png" alt="SITE" class="client-logo-img"
+          onerror="this.outerHTML='<span class=\'client-logo-text\'>SITE</span>'"/>
+      </a>
+
+      <a href="https://www.telebit.it" target="_blank" rel="noopener" class="client-logo-link" title="Telebit">
+        <img src="https://www.telebit.it/wp-content/uploads/2024/12/logo.svg" alt="Telebit" class="client-logo-img"
+          onerror="this.outerHTML='<span class=\'client-logo-text\'>Telebit</span>'"/>
+      </a>
+
+      <a href="#" class="client-logo-link" title="Waco">
+        <span class="client-logo-text">Waco</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="logo-large.png" alt="Energy Service Tech" height="80" style="display:block;"/></div>
+        <p>Soluzioni integrate per l'energia, le telecomunicazioni e le infrastrutture tecnologiche. Nazionali, affidabili, sostenibili.</p>
+
+        <div style="margin-top:1rem;">
+          <a href="https://www.instagram.com/_energyservicetech_s.r.l/" target="_blank" rel="noopener" title="Seguici su Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;border:1px solid var(--border);color:var(--text-3);transition:color .2s,border-color .2s;text-decoration:none;" onmouseover="this.style.color='#E1306C';this.style.borderColor='#E1306C'" onmouseout="this.style.color='';this.style.borderColor=''">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigazione</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chi-siamo.html">Chi Siamo</a></li>
+          <li><a href="rinnovabili.html">Energie Rinnovabili</a></li>
+          <li><a href="servizi.html">Tutti i Servizi</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servizi</h4>
+        <ul>
+          <li><a href="rinnovabili.html">Fotovoltaico</a></li>
+          <li><a href="servizi.html#fibre">Fibre Ottiche</a></li>
+          <li><a href="servizi.html#tlc-mobile">TLC Mobile</a></li>
+          <li><a href="servizi.html#tlc-fissa">TLC Fissa</a></li>
+          <li><a href="servizi.html#dpi">Ispezione DPI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <div class="footer-contact-item"><span>📍</span><span>Via Olo Galbani, 8<br>00047 Marino (RM)</span></div>
+        <div class="footer-contact-item"><span>📞</span><span>+39 334 270 9809<br>+39 393 132 6159</span></div>
+        <div class="footer-contact-item"><span>📠</span><span>06 960 06212</span></div>
+        <div class="footer-contact-item"><span>✉️</span><span><a href="mailto:info@energyservicetech.it">info@energyservicetech.it</a></span></div>
+        <div class="footer-contact-item"><span>✉️</span><span><a href="mailto:a.dannunzio@energyservicetech.it" style="word-break:break-all;">a.dannunzio@energyservicetech.it</a></span></div>
+        <div class="footer-contact-item"><span>✉️</span><span><a href="mailto:l.dannunzio@energyservicetech.it" style="word-break:break-all;">l.dannunzio@energyservicetech.it</a></span></div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Energy Service Tech S.r.l. — P.IVA 13997971000</p>
+      <p><a href="#">Privacy Policy</a> · <a href="#">Cookie Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const toggle = document.getElementById('navToggle');
+const links  = document.getElementById('navLinks');
+toggle.addEventListener('click', () => links.classList.toggle('open'));
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
