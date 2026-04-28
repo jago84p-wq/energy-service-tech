@@ -748,7 +748,11 @@ section { padding: 90px 5%; }
     display: none;
     flex-direction: column;
     position: fixed;
-    inset: var(--nav-h) 0 0 0;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - var(--nav-h));
     background: rgba(9,9,9,.97);
     padding: 2.5rem 5%;
     gap: 1.2rem;

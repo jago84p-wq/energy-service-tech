@@ -197,98 +197,54 @@
 
 <!-- ═══════════ CLIENTI ═══════════ -->
 <style>
-.client-logo-link {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  height:48px;
-  filter: brightness(0) invert(0.6);
-  opacity:.65;
-  transition:filter .35s ease, opacity .35s ease;
-  text-decoration:none;
+.partner-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .75rem 1rem;
+  margin-top: 2.5rem;
 }
-.client-logo-link:hover {
-  filter:none;
-  opacity:1;
+.partner-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: .55rem 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--text-2);
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: border-color .25s, color .25s, background .25s;
 }
-.client-logo-img {
-  max-height:38px;
-  max-width:130px;
-  width:auto;
-  object-fit:contain;
-  display:block;
-}
-.client-logo-text {
-  font-size:.8rem;
-  font-weight:700;
-  letter-spacing:.08em;
-  color:var(--text-2);
-  text-transform:uppercase;
-  white-space:nowrap;
+a.partner-chip:hover {
+  border-color: var(--green);
+  color: var(--text-1);
+  background: var(--green-glow);
 }
 </style>
 <section>
   <div class="section-inner">
     <div class="text-center">
-      <div class="section-tag">I nostri clienti</div>
+      <div class="section-tag">I nostri clienti & partner</div>
       <h2 class="section-title">Si fidano di noi</h2>
       <div class="divider"></div>
     </div>
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2rem 3.5rem;margin-top:2.5rem;">
-
-      <a href="https://www.sorgenia.it" target="_blank" rel="noopener" class="client-logo-link" title="Sorgenia">
-        <img src="https://www.sorgenia.it/sites/default/themes/sorgenia/assets/images/logo.svg" alt="Sorgenia" class="client-logo-img"
-          onerror="this.outerHTML='<span class=\'client-logo-text\'>Sorgenia</span>'"/>
-      </a>
-
-      <a href="https://openfiber.it" target="_blank" rel="noopener" class="client-logo-link" title="Open Fiber">
-        <img src="https://logo.clearbit.com/openfiber.it" alt="Open Fiber" class="client-logo-img"
-          onerror="this.outerHTML='<span class=\'client-logo-text\'>Open Fiber</span>'"/>
-      </a>
-
-      <a href="https://www.fastweb.it" target="_blank" rel="noopener" class="client-logo-link" title="Fastweb">
-        <img src="https://www.fastweb.it/adsl-fibra-ottica/gfx/dual/logo_black.svg" alt="Fastweb" class="client-logo-img"
-          onerror="this.outerHTML='<span class=\'client-logo-text\'>Fastweb</span>'"/>
-      </a>
-
-      <a href="https://www.fibernet.it" target="_blank" rel="noopener" class="client-logo-link" title="Fibernet">
-        <img src="https://logo.clearbit.com/fibernet.it" alt="Fibernet" class="client-logo-img"
-          onerror="this.outerHTML='<span class=\'client-logo-text\'>Fibernet</span>'"/>
-      </a>
-
-      <a href="https://www.circet.it" target="_blank" rel="noopener" class="client-logo-link" title="Circet Italia">
-        <img src="https://www.circet.it/medias/_processed_/6/b/csm_logo_Italia_40562115ab.png" alt="Circet Italia" class="client-logo-img"
-          onerror="this.outerHTML='<span class=\'client-logo-text\'>Circet Italia</span>'"/>
-      </a>
-
-      <a href="https://selekta.it" target="_blank" rel="noopener" class="client-logo-link" title="Selekta Italia">
-        <img src="https://logo.clearbit.com/selekta.it" alt="Selekta Italia" class="client-logo-img"
-          onerror="this.outerHTML='<span class=\'client-logo-text\'>Selekta Italia</span>'"/>
-      </a>
-
-      <a href="#" class="client-logo-link" title="MG Project">
-        <span class="client-logo-text">MG Project</span>
-      </a>
-
-      <a href="https://www.eolo.it" target="_blank" rel="noopener" class="client-logo-link" title="EOLO">
-        <img src="https://www.eolo.it/web/imperex/image/4edd84de_logo-eolo.webp" alt="EOLO" class="client-logo-img"
-          onerror="this.outerHTML='<span class=\'client-logo-text\'>EOLO</span>'"/>
-      </a>
-
-      <a href="https://www.sitespa.it" target="_blank" rel="noopener" class="client-logo-link" title="SITE">
-        <img src="https://www.sitespa.it/wp-content/uploads/2019/04/logo-ita.png" alt="SITE" class="client-logo-img"
-          onerror="this.outerHTML='<span class=\'client-logo-text\'>SITE</span>'"/>
-      </a>
-
-      <a href="https://www.telebit.it" target="_blank" rel="noopener" class="client-logo-link" title="Telebit">
-        <img src="https://www.telebit.it/wp-content/uploads/2024/12/logo.svg" alt="Telebit" class="client-logo-img"
-          onerror="this.outerHTML='<span class=\'client-logo-text\'>Telebit</span>'"/>
-      </a>
-
-      <a href="#" class="client-logo-link" title="Waco">
-        <span class="client-logo-text">Waco</span>
-      </a>
-
+    <div class="partner-grid">
+      <a href="https://www.sorgenia.it"  target="_blank" rel="noopener" class="partner-chip">Sorgenia</a>
+      <a href="https://openfiber.it"      target="_blank" rel="noopener" class="partner-chip">Open Fiber</a>
+      <a href="https://www.fastweb.it"   target="_blank" rel="noopener" class="partner-chip">Fastweb</a>
+      <a href="https://www.fibernet.it"  target="_blank" rel="noopener" class="partner-chip">Fibernet</a>
+      <a href="https://www.circet.it"    target="_blank" rel="noopener" class="partner-chip">Circet Italia</a>
+      <a href="https://selekta.it"        target="_blank" rel="noopener" class="partner-chip">Selekta Italia</a>
+      <span class="partner-chip">MG Project</span>
+      <a href="https://www.eolo.it"      target="_blank" rel="noopener" class="partner-chip">EOLO</a>
+      <a href="https://www.sitespa.it"   target="_blank" rel="noopener" class="partner-chip">SITE</a>
+      <a href="https://www.telebit.it"   target="_blank" rel="noopener" class="partner-chip">Telebit</a>
+      <span class="partner-chip">Waco</span>
     </div>
   </div>
 </section>
