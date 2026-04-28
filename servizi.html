@@ -18,7 +18,7 @@
 <nav class="navbar">
   <a href="index.html" class="nav-logo" style="display:flex;align-items:center;gap:.75rem;">
     <img src="logo.png" alt="Energy Service Tech Logo" height="62" style="display:block;"/>
-    <span style="font-size:.72rem;font-weight:600;letter-spacing:.1em;color:var(--text-2);text-transform:uppercase;line-height:1.35;">Energy Service<br>Tech</span>
+    <span class="nav-logo-text" style="font-size:.72rem;font-weight:600;letter-spacing:.1em;color:var(--text-2);text-transform:uppercase;line-height:1.35;">Energy Service<br>Tech</span>
   </a>
   <div class="nav-toggle" id="navToggle" aria-label="Menu" role="button" tabindex="0">
     <span></span><span></span><span></span>
@@ -361,17 +361,18 @@
 <script>
 const toggle = document.getElementById('navToggle');
 const links  = document.getElementById('navLinks');
-toggle.addEventListener('click', () => links.classList.toggle('open'));
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-}, { threshold: 0.12 });
-document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
-</script>
-
-<script>
-const toggle = document.getElementById('navToggle');
-const links  = document.getElementById('navLinks');
-toggle.addEventListener('click', () => links.classList.toggle('open'));
+toggle.addEventListener('click', () => {
+  links.classList.toggle('open');
+  toggle.classList.toggle('active');
+});
+links.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => { links.classList.remove('open'); toggle.classList.remove('active'); });
+});
+document.addEventListener('click', e => {
+  if (!toggle.contains(e.target) && !links.contains(e.target)) {
+    links.classList.remove('open'); toggle.classList.remove('active');
+  }
+});
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
 }, { threshold: 0.12 });
