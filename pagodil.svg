@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 78">
+  <defs>
+    <linearGradient id="pdg" gradientUnits="userSpaceOnUse" x1="170" y1="8" x2="170" y2="72">
+      <stop offset="0%"   stop-color="#F5A623"/>
+      <stop offset="55%"  stop-color="#E0531A"/>
+      <stop offset="100%" stop-color="#CC1420"/>
+    </linearGradient>
+  </defs>
+
+  <!-- "Pago" grigio chiaro -->
+  <text x="5" y="50"
+        font-family="'Helvetica Neue',Arial,Helvetica,sans-serif"
+        font-size="34" font-weight="300" fill="#C8C8C8" letter-spacing="-0.5">Pago</text>
+
+  <!-- "DIL" rosso bold -->
+  <text x="89" y="50"
+        font-family="'Helvetica Neue',Arial,Helvetica,sans-serif"
+        font-size="34" font-weight="700" fill="#CC1420">DIL</text>
+
+  <!-- "by Cofidis" piccolo -->
+  <text x="9" y="66"
+        font-family="'Helvetica Neue',Arial,Helvetica,sans-serif"
+        font-size="12" font-weight="400" fill="#999999">by Cofidis</text>
+
+  <!--
+    Anello: centro (170,39), raggio 30, apertura a sinistra ~60°
+    Start (210°, giallo-arancio): x=170+30*cos(210°)=144, y=39+30*sin(210°)=24
+    End  (150°, rosso):           x=170+30*cos(150°)=144, y=39+30*sin(150°)=54
+    300° senso orario → large-arc=1, sweep=1
+  -->
+  <path d="M 144 24 A 30 30 0 1 1 144 54"
+        fill="none" stroke="url(#pdg)" stroke-width="8.5" stroke-linecap="round"/>
+</svg>
